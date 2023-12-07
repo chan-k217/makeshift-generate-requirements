@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generate Requirements</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="widget-container">
+      <div class="container">
+        <h3>Generate Requirements</h3>
+        <!-- <div class="slider-container">
+          <label for="numberSlider"><strong>Slider</strong>:</label>
+          <input
+            type="range"
+            id="numberSlider"
+            name="numberSlider"
+            min="2"
+            max="10"
+            value="2"
+          />
+          <span id="sliderValue">2</span>
+        </div> -->
+
+        <!-- <div class="dropdown-container">
+          <label for="optionsDropdown"><strong>Choices</strong> : </label>
+          <select id="optionsDropdown" name="optionsDropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+            <option value="option5">Option 5</option>
+          </select>
+        </div> -->
+
+        <!-- radio buttons
+        <div>
+          <form>
+            <label><strong>Gender:</strong></label>
+              <input
+                type="radio"
+                name="gender"
+                value="male">
+              Male
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                value="female">
+              Female
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                value="other">
+              Other
+            </label>
+          </form>
+        </div> -->
+
+        <!-- checkbox
+        <div class = 'checkboxes'>
+        <form>
+          <label><strong>Vehicles I own:</strong></label>
+          <input type="checkbox" name="vehicle-check" value="Bicycle"> Bicycle 
+          <input type="checkbox" name="vehicle-check" value="Bike"> Bike 
+          <input type="checkbox" name="vehicle-check" value="Car"> Car
+      </form>
+    </div> -->
+
+        <!-- numbers _ minimum # of RN -->
+        <div>
+          <form id="numbers">
+            Minimum # of RNs Each Shift:
+            <input
+              type="number"
+              id="minimum-RNs"
+              name="minimum-RNs"
+              min="1"
+              max="100"
+              value="4"
+            />
+          </form>
+        </div>
+        <!-- numbers _ minimum # of Charge Nurse -->
+        <div>
+          <form id="numbers">
+            Minimum # of Charge Nurse:
+            <input
+              type="number"
+              id="minimum-charge-nurse"
+              name="minimum-charge-nurse"
+              min="1"
+              max="100"
+              value="4"
+            />
+          </form>
+        </div>
+        <!-- numbers _ minimum # of Supervisors -->
+        <div>
+          <form id="numbers">
+            Minimum # of Supervisors:
+            <input
+              type="number"
+              id="minimum-supervisors"
+              name="minimum-supervisors"
+              min="1"
+              max="100"
+              value="4"
+            />
+          </form>
+        </div>
+        <!-- Start Date -->
+        <div>
+          <form>
+            <label for="date">Start Date:</label>
+            <input
+              type="date"
+              id="startdate"
+              name="startdate"
+              value="2023-10-01"
+            />
+          </form>
+        </div>
+        <!-- Number of Days to Schedule from Start Date -->
+        <div class="slider-container">
+          <label for="daysFromStartDate"
+            ># of Days to Schedule from Start Date:</label
+          >
+          <div class="slider-input">
+            <input
+              type="range"
+              id="daysFromStartDate"
+              name="numberSlider"
+              min="0"
+              max="365"
+              value="7"
+            />
+            <span id="sliderValue">7</span>
+          </div>
+        </div>
+
+        <div>
+          <button id="sendButton">Generate Requirements</button>
+          <div id="statusBubble" class="status-bubble"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
